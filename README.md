@@ -35,7 +35,13 @@ The following are required to implement this application
 
   - rosrun ros_prometheus rssi_prometheus.py
 
+## How to kill port in Ubuntu
 
+  In terminal run the ff:
+    
+  - sudo kill -9 `sudo lsof -t -i:XXXX`
+
+  Where XXXX is the port number. Mind the back ticks.
 
 
   
