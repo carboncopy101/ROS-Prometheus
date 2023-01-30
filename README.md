@@ -12,11 +12,30 @@ The following are required to implement this application
   - Python
   - ROS
 
-## Develoment
+## Development
 
 26 January - Creation of repository as well as preliminary planning
+30 January - Added LoRa RSSI script, README instructions, etc. 
 
 ## How to Use
+
+  In a terminal run the ff:
+
+  - roscore
+
+  In a new terminal run:
+
+  - rosrun rosserial_python serial_node.py /dev/ttyACM0
+
+  In a new terminal run:
+
+  - rosrun rosserial_python serial_node.py /dev/ttyACM1 __name:=nodeRX
+
+  In a new terminal run the pkg script:
+
+  - rosrun ros_prometheus rssi_prometheus.py
+
+
 
 
   
