@@ -35,6 +35,11 @@ The following are required to implement this application
 
   - rosrun ros_prometheus rssi_prometheus.py
 
+  In a new terminal start the prometheus server.
+
+  - ./prometheus --web.listen-address=:<IP of machine>:<port>"
+
+  The default port is 9090. If you change the port make sure to add that as a datasource.
 ## How to kill port in Ubuntu
 
   In terminal run the ff:
