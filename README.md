@@ -40,6 +40,7 @@ The following are required to implement this application
   - ./prometheus --web.listen-address=:<IP of machine>:<port>"
 
   The default port is 9090. If you change the port make sure to add that as a datasource.
+
 ## How to kill port in Ubuntu
 
   In terminal run the ff:
@@ -48,5 +49,10 @@ The following are required to implement this application
 
   Where XXXX is the port number. Mind the back ticks.
 
+## How to edit the Prometheus server to scrape a target port.
 
+  In the prometheus.yml file edit the scrape_configs, static_configs.
+  Add the target port
+
+  - - targets: ["<IP of machine>:<port>"]
   
