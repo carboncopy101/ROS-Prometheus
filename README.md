@@ -37,7 +37,7 @@ The following are required to implement this application
 
   In a new terminal start the prometheus server.
 
-  - ./prometheus --web.listen-address=:<IP of machine>:<port>"
+  - ./prometheus --web.listen-address="<IP of machine>:<port>"
 
   The default port is 9090. If you change the port make sure to add that as a datasource.
 
